@@ -1,0 +1,229 @@
+/* App.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* Sidebar Styles */
+  .app-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 25%;
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sidebar h1 {
+    font-size: 28px;
+    color: #4caf50;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar img {
+    width: 90px;
+    height: 90px;
+    border-radius: 30%;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .sidebar ul li {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #555;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #f0f0f0;
+    color: #4caf50;
+  }
+  
+  /* Task Container Styles */
+  .task-container {
+    width: 75%;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .task-input {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .task-input input {
+    width: calc(100% - 100px);
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .task-input button {
+    width: 80px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .task-input button:hover {
+    background-color: #45a049;
+  }
+  
+  .task-list {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .task-item span {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .task-item button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .task-item button:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Today Tasks Chart */
+  .chart-container {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .chart-container h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .chart-container .chart {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(#4caf50 40%, #e0e0e0 40%);
+    margin: 20px auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .app-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      border-right: none;
+    }
+  
+    .task-container {
+      width: 100%;
+    }
+  }
+  .app-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 25%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  .task-container {
+    width: 75%;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .task-input input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .task-input button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+  }
+  
+  .task-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .task-list {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .task-actions button {
+    margin-left: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+  }
+  
